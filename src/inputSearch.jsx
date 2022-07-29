@@ -11,7 +11,7 @@ const InputSearch = ({ setGetValue, getValue }) => {
     }
     const fetchAPI = async () => {
         try {
-            const response = await axios(`https://api.openweathermap.org/data/2.5/weather?q=${inputSearch}&appid=d60759a54691e075fabe0fd0a89bc6d0`)
+            const response = await axios(`https://api.openweathermap.org/data/2.5/weather?q=${inputSearch}&appid={key}`)
 
             setGetValue({
                 ...getValue,
